@@ -1,0 +1,25 @@
+[package]
+name = "math_quiz_webapp"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = "0.7.5"
+tokio = { version = "1", features = ["full"] }
+hyper = { version = "1.4.1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1.0"
+sqlx = { version = "0.8.0", features = ["sqlite", "runtime-tokio-native-tls"] }
+bcrypt = "0.15.1"
+tower = "0.5.0"
+#tokio-rustls = "0.26.0"
+axum-extra = "0.9.3" # for sessions, cookies, etc.
+thiserror = "1.0"
+uuid = "1.0"
+rust-embed = "8.5.0" # For embedding static files like CSS, JS
+dotenvy ="0.15"
+tracing ="0.1"
+tracing-subscriber = "0.3"
+
